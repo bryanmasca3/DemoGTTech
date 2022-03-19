@@ -1,0 +1,29 @@
+/*ADD FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*ADD CUSTOM CLASSES*/
+.btn {
+    @apply bg-primary text-black font-black py-2 px-4 rounded;
+}
+.btn:hover {
+    @apply  text-white;
+}
+@layer utilities {
+
+.shape-1{
+    clip-path: polygon(40% 0, 100% 0, 100% 100%, 30% 100%, 0 50%);
+}
+.shape-2{
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 15% 100%, 0 50%);
+}
+.shape-3{
+    clip-path: polygon(85% 0, 100% 50%, 85% 100%, 0 100%, 0 0);
+}
+.shape-4{
+    clip-path: polygon(70% 0, 100% 50%, 70% 100%, 0 100%, 0 0);
+}
+}

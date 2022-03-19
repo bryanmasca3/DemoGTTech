@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <script src="./../node_modules/tw-elements/dist/js/index.min.js"></script>
+</head>
+<body class="font-heading" >
+    <header class="bg-black text-white sticky top-0 z-10">
+        <div class="container mx-auto lg:flex lg:py-4 pt-4 lg:justify-around lg:items-center">
+            <div class="py-4 lg:py-0">
+                <img src="img/logo.svg" alt="" class="mx-auto">
+            </div>
+            <div class="hidden lg:flex lg:gap-4 text-center">
+                 <p class="font-light text-sm">BODEGA + OFICINA PREMIUM + SHOWROOM</p>
+                 <p class="font-bold text-sm">TODO EN UN SOLO LUGAR</p>
+            </div>
+            <nav class="hidden lg:block">
+                <ul class="flex font-light text-sm">
+                    <li class="px-4"><a href="#proyecto" class="border-b-2 border-primary pb-1 hover:text-primary">PROYECTO</a></li>
+                    <li class="px-4"><a href="#seguridad" class="hover:text-primary">SEGURIDAD</a></li>
+                    <li class="px-4"><a href="#plantas" class="hover:text-primary">PLANTAS</a></li>
+                    <li class="px-4"><a href="#ubicacion" class="hover:text-primary">UBICACIÓN</a></li>
+                    <li class="px-4"><a href=""class="btn">COTIZA AQUÍ</a></li>
+                </ul>
+            </nav>
+            <div class="lg:hidden px-1 border-y-[1px] border-second">
+                <a class="" id="mobile-menu"><i class='bx bx-menu text-5xl'></i></a>
+                <ul class="hidden font-light text-sm w-full mobile-links transition-all duration-100">
+                    <li class="px-4 py-3 lg:py-0"><a href="#proyecto" class="block text-center  border-primary pb-1 hover:text-primary">PROYECTO</a></li>
+                    <li class="px-4 py-3 lg:py-0"><a href="#seguridad" class="block text-center hover:text-primary">SEGURIDAD</a></li>
+                    <li class="px-4 py-3 lg:py-0"><a href="#plantas" class="block text-center hover:text-primary">PLANTAS</a></li>
+                    <li class="px-4 py-3 lg:py-0"><a href="#ubicacion" class="block text-center hover:text-primary">UBICACIÓN</a></li>
+                    <li class="px-4 py-3 lg:py-0"><a href=""class="btn block text-center w-full">COTIZA AQUÍ</a></li>
+                </ul>
+            </div>
+              
+               
+        
+        </div>
+    </header>
+    <section class="slides">
+        <div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
+            <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner relative w-full overflow-hidden lg:h-[46rem]">
+              <div class="carousel-item active relative float-left w-full ">
+                <img
+                  src="img/CAM-1-baja.png"
+                  class="block w-full"
+                  alt="..."
+                />
+                <div id="firstSlide"class="hidden absolute top-32 left-0 bottom-0 md:flex md:flex-col pl-20">
+                  <h5 class="font-black text-white text-2xl lg:text-3xl ">ARRIENDOS DESDE</h5>
+                  <h5 class="font-black text-white text-3xl lg:text-6xl ">UF 78 + IVA</h5>
+                  <p class="font-bold text-white text-2xl lg:text-4xl">LO QUE NECESITA TU NEGOCIO</p>
+                  <p class="font-bold text-white text-lg lg:text-2xl">UBICACIÓN PRIVILEGIADA - SEGURIDAD DE ALTO NIVEL - ARQUITECTURA VANGUARDISTA</p>
+                  <img src="img/arrow.svg" alt="" class="w-16 h-16 absolute -left-0 top-24">
+                </div>
+              </div>
+              <div class="carousel-item relative float-left w-full">
+                <img
+                  src="img/CAM-10-baja.png"
+                  class="block w-full"
+                  alt="..."
+                />
+                <div  id="secondSlide" class="hidden absolute top-0 left-0 bottom-0 md:flex md:flex-col md:justify-center gap-4">
+                    <div  class="text-white">
+                        <div class="flex gap-3 bg-black/70 items-center"><img src="img/arrow.svg" alt="" class="h-10"><span class="font-bold text-xl lg:text-3xl">EQUIPAMIENTO</span></div>
+                        <div class="bg-black/50 lg:p-8 p-4">
+                            <ul class="flex flex-col gap-1">
+                                <li class="flex gap-1"><img src="img/icon-4.svg" alt="" class="w-4"><a href="" class="font-medium text-base lg:text-lg">Estacionamiento de visita</a></li>
+                                <li class="flex gap-1"><img src="img/icons-5.svg" alt="" class="w-4"><a href="" class="font-medium text-base lg:text-lg">Bicicleteros</a></li>
+                                <li class="flex gap-1"><img src="img/icon-6.svg" alt="" class="w-4"><a href="" class="font-medium text-base lg:text-lg">Punto Limpio</a></li>
+                                <li class="flex gap-1"><img src="img/icon-7.svg" alt="" class="w-4"><a href="" class="font-medium text-base lg:text-lg">Iluminación LED en áreas comunes</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="text-white ml-8">
+                        <h5 class="font-black text-white text-2xl lg:text-3xl">ARRIENDOS DESDE</h5>
+                        <h5 class="font-black text-white text-3xl lg:text-6xl">UF 78 + IVA</h5>
+                    </div>
+                  
+                </div>
+              </div>
+              <div class="carousel-item relative float-left w-full">
+                <img
+                  src="img/CAM-16-baja.png"
+                  class="block w-full"
+                  alt="..."
+                />
+                <div  id="thridSlide" class="hidden absolute top-0 left-0 bottom-0 md:flex md:flex-col md:justify-center gap-4 pl-20">
+                    <h5 class="font-black text-white text-2xl  lg:text-3xl">ARRIENDOS DESDE</h5>
+                    <h5 class="font-black text-white text-3xl  lg:text-6xl">UF 78 + IVA</h5>
+                    <p class="font-bold text-white text-sm lg:text-2xl m-0">
+                        OFICINAS 100% HABILITADAS <br>
+                        FACILITAMOS LA INTEGRACIÓN COMERCIAL, <br>
+                        ADMINISTRATIVA Y LOGÍSTICA DE TU NEGOCIO</p>
+                    <img src="img/arrow.svg" alt="" class="w-16 h-16 absolute left-5 bottom-[22rem]">
+                </div>
+              </div>
+            </div>                   
+          </div>
+    </section>
+    <section class="icons bg-five">
+        <div class="container lg:flex lg:gap-12 mx-auto">
+            <div class="lg:flex lg:flex-col lg:gap-5 lg:items-center lg:w-1/4 w-full py-8">
+                <img src="img/icon-1.svg" alt="" class="w-12 h-12 mx-auto">
+                <h4 class="text-textSecond font-bold text-sm text-center">UBICACIÓN <br>
+                    PRIVILEGIADA</h4>
+                <p class="text-thrid text-center font-light text-base px-6">Con acceso inmediato a autopistas, camino al aeropuerto, importantes áreas comerciales e industriales. Hazlo todo en un solo viaje a tu nueva oficina-showroom-bodega.</p>
+            </div>
+            <div class="lg:flex lg:flex-col lg:gap-5 lg:items-center lg:w-1/4 py-8 w-full">
+                <img src="img/icon-2.svg" alt="" class="w-12 h-12 mx-auto">
+                <h4 class="text-textSecond font-bold text-sm  text-center">SEGURIDAD DE  <br>
+                    ALTO NIVEL</h4>
+                <p class="text-thrid text-center font-light text-base px-6">Contamos con un sistema de vigilancia cerrado de última generación, control de acceso, cerco eléctrico, monitoreo en línea y un sistema antialunijaze para darte la tranquilidad de que necesitas.</p>
+            </div>
+            <div class="lg:flex lg:flex-col lg:gap-5 lg:items-center lg:w-1/4 py-8 w-full">
+                <img src="img/icon-3.svg" alt="" class="w-12 h-12 mx-auto">
+                <h4 class="text-textSecond font-bold text-sm  text-center">ARQUITECTURA <br>
+                    VANGUARDISTA</h4>
+                <p class="text-thrid text-center font-light text-base px-6">Galpones diseñados para optimizar todos tus espacios aprovechando cada centímetro, con oficinas habilitadas para comenzar a operar en el momento que estés listo.</p>
+            </div>
+            <div class="lg:w-1/4 relative w-full">
+                <div class="lg:absolute text-white bg-second py-4 px-8 lg:bottom-0 w-full">
+                    <h3 class="text-center font-black text-lg">ARRIENDO Y VENTA DE BODEGAS
+                    </h3>
+                    <h4 class="text-center font-black text-lg -mt-2 mb-8">
+                        DESDE 350 A 490 M2
+                    </h4>
+                    <div class="form flex flex-col gap-2">
+                        <div class="flex text-left flex-col">
+                            <label for="nombre" class="font-thin text-sm">Nombre y Apellido</label>
+                            <input type="text" name="nombre" class="bg-four border-0 p-2">
+                        </div>
+                        <div class="flex text-left flex-col">
+                            <label for="email" class="font-thin text-sm">Email</label>
+                            <input type="text" name="email" class="bg-four border-0 p-2">
+                        </div>
+                        <div class="flex text-left flex-col">
+                            <label for="empresa" class="font-thin text-sm">Nombre de Empresa</label>
+                            <input type="text" name="empresa" class="bg-four border-0 p-2">
+                        </div>
+                        <div class="flex text-left flex-col">
+                            <label for="telefono" class="font-thin text-sm">Telefono</label>
+                            <input type="number" name="telefono" class="bg-four border-0 p-2" placeholder="Ingrese solo numeros">
+                        </div>
+                        <div class="flex text-left flex-col">
+                            <label for="bodega" class="font-thin text-sm">Selecciona Bodega</label>
+                            <select name="bodega" class="bg-four border-0 p-2">
+                                <option value="b1">Bodega 1</option>
+                                <option value="b2">Bodega 2</option>                 
+                              </select>
+                        </div>
+                        <div class="mt-2 mb-4">
+                            <button type="text" class="btn"> Cotiza Aqui</button>
+                          
+                        </div>
+                        <div class="flex justify-start gap-2">
+                            <img src="img/wassap-icon.svg" alt="">
+                            <p class="font-bold text-seven text-sm">  +56 9 9915 9535</p> 
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="proyecto"class="bg-six">
+        <div class="flex lg:h-[40rem] flex-col-reverse lg:flex-row">
+            <div class="lg:w-2/5 flex flex-col justify-center w-full">
+                <div class="px-12">
+                    <p class="text-textSecond font-light text-base text-center py-6 lg:text-left lg:text-xl  lg:pr-8">Necesitas una oficina, un showroom y una bodega para tu negocio. Todo eso EcoparkCenter lo tiene en un solo lugar para que comiences ahora mismo. 
+                        Un espacio privado con las ventajas y seguridad de una gran empresa que se ajusta a lo que necesites.</p>
+                </div>
+                
+            </div>
+            <div class="lg:w-3/5 relative w-full">
+                <div class="lg:absolute w-full h-full">
+                    <div class="hidden lg:block shape-2 absolute h-full w-full bg-primary"></div>
+                     <div class="lg:absolute right-0 h-full lg:w-[96%] w-full lg:shape-2">
+                        <img src="img/section-1.svg" alt="" class="w-full h-full object-cover" >
+                    </div>
+               
+                </div>
+            </div>
+        </div>
+        <div class="flex lg:h-[40rem] flex-col lg:flex-row">          
+            <div class="lg:w-3/5 relative  w-full">
+                <div class="lg:absolute w-full h-full">
+                    <div class="hidden lg:block shape-3 absolute h-full w-full bg-primary"></div>
+                    <div class="lg:shape-3 lg:absolute left-0 h-full lg:w-[96%] w-full">
+                        <img src="img/section-2.svg" alt="" class="w-full h-full object-cover" >
+                    </div>
+               
+                </div>
+            </div>
+            <div class="lg:w-2/5 flex flex-col justify-center w-full">
+                <div class="px-12 py-6 lg:py-0">
+                    <h3 class="font-black text-primary text-xl mb-8 lg:mb-8 text-center lg:text-right lg:text-4xl">LO TUYO ES UNA <br>
+                        STORE OFFICE</h3>
+                    <p class="text-textSecond font-light text-base text-center lg:text-right lg:text-base lg:pl-8">EcoParkCenter es un Moderno y Seguro Condominio de Bodegas + Showroom + Oficinas Premium que se entregan 100% habilitadas para el almacenamiento y funcionamiento de actividades productivas acreditadas como INOFENSIVAS por 
+                        el Servicio de Salud.</p><br>
+                        
+                        <p class="text-textSecond font-light text-base text-center lg:text-right lg:text-base lg:pl-8">EcoParkCenter está ubicado en la mejor zona industrial de Quilicura con conectividad directa a Panamerica Norte, apunta a empresas que buscan optimizar sus procesos en un mismo espacio; facilitando la integración de la gestión comercial, administrativa y logística de Última Milla.</p>
+                        <br>
+                        <p class="text-textSecond font-light text-base text-center lg:text-right lg:text-base lg:pl-8">Los módulos van desde los 350 a 490 m2 con oficinas desde 60 m2 habilitadas con buen estándar de terminaciones para una fácil instalación y operación inmediata. 
+                        </p>
+                </div>
+                
+            </div>
+        </div>
+        <div class="flex lg:h-[40rem] flex-col-reverse lg:flex-row"  id="seguridad">
+            <div class="lg:w-2/5 flex flex-col justify-center w-full">
+                <div class="px-12 lg:py-0 py-6">
+                    <h3 class="font-black text-primary text-xl mb-8 lg:mb-8 text-center lg:text-left lg:text-4xl">SEGURIDAD <br>
+                        Y VIGILANCIA</h3>
+                    <p class="text-textSecond font-light text-base text-center lg:text-left lg:text-lg  lg:pr-8 ">La seguridad es un factor fundamental para el óptimo funcionamiento de las empresas, por lo que hemos incorporado equipamiento de alto estandar, sistemas de disuación y prevención de última generación. Es un condominio cerrado con muro perimetral con contención y cerco eléctrico, cámaras de monitoreo y sistemas antialunizaje.</p>
+                </div>
+                
+            </div>
+            <div class="lg:w-3/5 relative w-full">
+                <div class="lg:absolute w-full h-full">
+                    <div class="hidden lg:block shape-2 absolute h-full w-full bg-primary"></div>
+                   <div class="lg:shape-2 lg:absolute right-0 h-full lg:w-[96%] w-full">
+                        <img src="img/section-3.png" alt="" class="w-full h-full object-cover" >
+                   </div>
+               
+                </div>
+            </div>
+        </div>
+    </section> 
+    <section class="relative" id="plantas">
+        <div class="">
+            <img src="img/Enmascarar.png" alt="">
+        </div>     
+        <div class="absolute bottom-[10%] left-[2%]">
+            <button type="button" class="rounded-full font-black text-primary bg-[#2D823F] lg:w-8 lg:h-8 h-4 w-4 text-xs lg:text-xl"
+            data-bs-toggle="tooltip" data-bs-html="true" title="Muro perimetral exterior hormigón 1,4 mt">12</button>                    
+        </div>
+        <div class="absolute bottom-[30%] left-[20%]">
+            <button type="button" class="rounded-full text-black  font-black bg-primary  lg:w-8 lg:h-8 h-4 w-4 text-xs lg:text-xl"
+            data-bs-toggle="tooltip" data-bs-html="true" title="Altura libre 9 mts">h</button>                    
+        </div>
+        <div class="absolute  top-[35%] left-[25%]">
+            <button type="button" class="rounded-full text-primary font-black bg-[#2D823F] lg:w-8 lg:h-8 h-4 w-4 text-xs lg:text-xl"
+            data-bs-toggle="tooltip" data-bs-html="true" title="Iluminación natural (plancha traslúcida)">7</button>                    
+        </div>
+        <div class="absolute  bottom-[3%] left-[30%]">
+            <button type="button" class="rounded-full text-primary font-black bg-[#2D823F] lg:w-8 lg:h-8 h-4 w-4 text-xs lg:text-xl"
+            data-bs-toggle="tooltip" data-bs-html="true" title="Pavimentos radier pulido alto tráfico">11</button>                    
+        </div>
+        <div class="absolute  bottom-[50%] left-[35%]">
+            <button type="button" class="rounded-full text-primary bg-[#2D823F] lg:w-8 lg:h-8 h-4 w-4 font-black text-xs lg:text-xl"
+            data-bs-toggle="tooltip" data-bs-html="true" title="Iluminación led">8</button>                    
+        </div>
+        <div class="absolute  top-[40%] left-[45%]">
+            <button type="button" class="rounded-full text-primary bg-[#2D823F] lg:w-8 lg:h-8 h-4 w-4 font-black text-xs lg:text-xl"
+            data-bs-toggle="tooltip" data-bs-html="true" title="Sensor humo y alarma incendio ">2</button>                    
+        </div>
+        <div class="absolute  top-[25%] left-[50%]">
+            <button type="button" class="rounded-full text-primary bg-[#2D823F] lg:w-8 lg:h-8 h-4 w-4 font-black text-xs lg:text-xl"
+            data-bs-toggle="tooltip" data-bs-html="true" title="Sistema Ventilación natural">5</button>                    
+        </div>
+        <div class="absolute  bottom-[30%] left-[50%]">
+            <button type="button" class="rounded-full text-primary bg-[#2D823F] lg:w-8 lg:h-8 h-4 w-4 font-black text-xs lg:text-xl"
+            data-bs-toggle="tooltip" data-bs-html="true" title="Muros divisorios entre bodegas RF60">10</button>                    
+        </div>
+        <div class="absolute  top-[35%] right-[38%]">
+            <button type="button" class="rounded-full text-primary bg-[#2D823F] lg:w-8 lg:h-8 h-4 w-4 font-black text-xs lg:text-xl"
+            data-bs-toggle="tooltip" data-bs-html="true" title="Cubierta techo y muros con aislación térmica ">9</button>                    
+        </div>
+        <div class="absolute  bottom-[10%] right-[30%]">
+            <button type="button" class="rounded-full text-primary bg-[#2D823F] lg:w-8 lg:h-8 h-4 w-4 font-black text-xs lg:text-xl"
+            data-bs-toggle="tooltip" data-bs-html="true" title="Red húmeda">1</button>                    
+        </div>
+        <div class="absolute  bottom-[20%] right-[17%]">
+            <button type="button" class="rounded-full text-primary bg-[#2D823F] lg:w-8 lg:h-8 h-4 w-4 font-black text-xs lg:text-xl"
+            data-bs-toggle="tooltip" data-bs-html="true" title="Citófono a portería">6</button>                    
+        </div>
+        <div class="absolute  bottom-[41%] right-[22%]">
+            <button type="button" class="rounded-full text-primary bg-[#2D823F] lg:w-8 lg:h-8 h-4 w-4 font-black text-xs lg:text-xl"
+            data-bs-toggle="tooltip" data-bs-html="true" title="Energía Trifásica y Breaker Eléctrico">4</button>                    
+        </div>
+        <div class="absolute  bottom-[30%] right-[10%]">
+            <button type="button" class="rounded-full text-primary bg-[#2D823F] lg:w-8 lg:h-8 h-4 w-4 font-black text-xs lg:text-xl"
+            data-bs-toggle="tooltip" data-bs-html="true" title="Portón levante motorizado ">3</button>                    
+        </div>
+        <div class="absolute  bottom-[41%] right-[13%]">
+            <button type="button" class="rounded-full text-black bg-primary lg:w-8 lg:h-8 h-4 w-4 font-black text-xs lg:text-xl"
+            data-bs-toggle="tooltip" data-bs-html="true" title="-Puerta acceso principal oficinas de vidrio templado tipo </br> 
+                                                                Protex con manillón de acero inoxidable
+                                                                -Baño con ducha/camarín </br> 
+                                                                -Baño oficinas </br> 
+                                                                -Kitchennette </br> 
+                                                                -Terno eléctrico 100 listo </br> 
+                                                                -Porcelanato en oficina y baños 1º nivel; Vinílico en 2º nivel  </br> 
+                                                                - Cielo amerricano segundo piso ">13</button>                    
+        </div>
+    </section>  
+    <section class="bg-five text-white">
+        <div class="container flex  flex-col lg:flex-row pt-8 items-center justify-around mx-auto">
+            <div class="flex flex-col justify-center gap-2 lg:px-0 px-4">
+                <h3 class="text-2xl text-textSecond lg:text-left text-center ">Nos mueve la eficiencia,<br> la simpleza y la eficacia.</h3>
+                <p class="text-textSecond text-base font-light lg:text-left text-center">En nuestros espacios además encontrarás<br>
+                    terminaciones de primer nivel, seguridad<br>
+                    de última tecnología y diseños<br>
+                    optimizados para un alto rendimiento.</p>
+            </div>
+            <div class="flex flex-col justify-center gap-4 relative lg:py-0 py-8">
+                    <h4 class=" my-4 text-primary font-bold text-2xl">ELIGE TU BODEGA</h4>
+                    <ul id="tabs-tabVertical" class="nav nav-tabs flex flex-col gap-4" role="tablist">
+                        <li class="nav-item text-textSecond"  role="presentation"><a href="#tabs-bodega1"id="tabs-bodega1-tabVertical" data-bs-toggle="pill" data-bs-target="#tabs-bodega1" role="tab"
+                            aria-controls="tabs-bodega1" aria-selected="true"><i class='bx bxs-circle inline-block mr-2' style="color: #009845;"></i>BODEGA 1</a></li>
+                        <li class="nav-item text-textSecond"  role="presentation"><a href="#tabs-bodega2" id="tabs-bodega2-tabVertical" data-bs-toggle="pill" data-bs-target="#tabs-bodega2" role="tab"
+                            aria-controls="tabs-bodega2" aria-selected="false"><i class='bx bxs-circle inline-block mr-2' style="color: #046939;"></i>BODEGA 2,4 y 6</a></li>
+                        <li class="nav-item text-textSecond"  role="presentation"><a href="#tabs-bodega3" id="tabs-bodega3-tabVertical" data-bs-toggle="pill" data-bs-target="#tabs-bodega3" role="tab"
+                            aria-controls="tabs-bodega3" aria-selected="false"><i class='bx bxs-circle inline-block mr-2' style="color: #97C34E;"></i>BODEGA 3 y 5</a></li>
+                        <li class="nav-item text-textSecond"  role="presentation"><a href="#tabs-bodega4" id="tabs-bodega4-tabVertical" data-bs-toggle="pill" data-bs-target="#tabs-bodega4" role="tab"
+                            aria-controls="tabs-bodega4" aria-selected="false"><i class='bx bxs-circle inline-block mr-2' style="color: #2D823F;"></i>BODEGA 7</a></li>
+                    </ul>
+                    <div class=" hidden lg:block absolute -right-14">
+                            <img src="img/line-vertical.svg" alt="" height="100%">
+                    </div>
+            </div>
+            <div class="flex flex-col gap-4 justify-center  lg:py-0 py-4">
+                <div>
+                    <p class="font-light text-sm">SUPERFICIE BODEGA</p>
+                    <p class="text-2xl font-normal">429,34 m2</p>
+                </div>
+                <div>
+                    <p class="font-light text-sm">SUPERFICIE OFICINAS</p>
+                    <p class="text-2xl font-normal">60,6 m2</p>
+                </div>
+                <div>
+                    <p class="font-light text-sm">SUPERFICIE TOTAL</p>
+                    <p class="text-2xl font-normal">489,94 m2</p>
+                </div>
+                <a class="btn"
+                href="#tabs-form" id="tabs-form-tabVertical" data-bs-toggle="pill" data-bs-target="#tabs-form" role="tab"
+                            aria-controls="tabs-form" aria-selected="false">COTIZA AQUÍ</a>
+            </div>
+            <div>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active h-96" id="tabs-bodega1" role="tabpanel"
+                        aria-labelledby="tabs-bodega1-tabVertical">
+                        <img src="img/line-1.svg" alt="" class="h-full">
+                    </div>
+                    <div class="tab-pane fade h-96"  id="tabs-bodega2" role="tabpanel"
+                    aria-labelledby="tabs-bodega2-tabVertical">
+                      <img src="img/line3.png" alt="" class="h-full">
+                     
+                    </div>
+                    <div class="tab-pane fade h-96"  id="tabs-bodega3" role="tabpanel"
+                    aria-labelledby="tabs-bodega3-tabVertical">
+                    <img src="img/line2.png" alt="" class="h-full"> 
+                    </div>
+                    <div class="tab-pane fade h-96"  id="tabs-bodega4" role="tabpanel"
+                    aria-labelledby="tabs-bodega4-tabVertical">
+                       <img src="img/line4.png" alt="" class="h-full">
+                    </div>
+                    <div class="tab-pane fade h-96"  id="tabs-form" role="tabpanel"
+                    aria-labelledby="tabs-form-tabVertical">
+                           <div class="form flex flex-col gap-2">
+                        <div class="flex text-left flex-col">
+                            <label for="nombre" class="font-thin text-sm">Nombre y Apellido</label>
+                            <input type="text" name="nombre" class="bg-four border-0 p-2">
+                        </div>
+                        <div class="flex text-left flex-col">
+                            <label for="email" class="font-thin text-sm">Email</label>
+                            <input type="text" name="email" class="bg-four border-0 p-2">
+                        </div>
+                        <div class="flex text-left flex-col">
+                            <label for="empresa" class="font-thin text-sm">Nombre de Empresa</label>
+                            <input type="text" name="empresa" class="bg-four border-0 p-2">
+                        </div>
+                        <div class="flex text-left flex-col">
+                            <label for="telefono" class="font-thin text-sm">Telefono</label>
+                            <input type="number" name="telefono" class="bg-four border-0 p-2" placeholder="Ingrese solo numeros">
+                        </div>                   
+                        <div class="mt-2 mb-4">
+                            <button type="text" class="btn"> Cotiza Aqui</button>
+                          
+                        </div>                       
+                        
+                    </div>
+                    </div>
+                </div>           
+             </div>
+        </div>
+    </section> 
+    <section class="map bg-six" id="ubicacion">
+        <div class="flex lg:h-[45rem] lg:flex-row flex-col">          
+            <div class="lg:w-2/3 w-full relative">           
+                    <div class=" hidden lg:block shape-3 absolute h-full w-full bg-primary"></div>
+                    <div class="lg:shape-3 lg:absolute left-0 h-full w-full lg:w-[96%]">
+                        <img src="img/map.png" alt="" class="h-full object-cover w-full" >
+                    </div>
+                               
+            </div>
+            <div class="lg:w-1/3 w-full">
+                <div class="flex flex-col justify-center items-center gap-8 h-full lg:py-0 py-8">
+                    <h1 class="text-primary font-black text-3xl">MAPA DE <br>
+                        CONECTIVIDAD</h1>
+                        <ul class="text-white font-bold text-sm"> 
+                            <li class="flex gap-1"><img src="img/point-ecopark.png" alt="" class="h-8"> <a href="">ECOPARKCENTER <br> LAS ESTERAS</a>
+                               </li>
+                            <li  class="flex gap-2"><img src="img/icons-circle.svg" alt="" class="h-4"> <a>ECOPARKCENTER <br>
+                                LAUTARO (Futuro <br>
+                                Proyecto 70 Bodegas)</a></li>
+                            <li><i class='bx bxs-circle inline-block mr-2' style="color: #03F9FF;"></i><a href="">CENTRO EMPRESARIAL<br>
+                                “EL CORTIJO”</li></a> 
+                            <li><i class='bx bxs-circle inline-block mr-2' style="color: #3A5CA7;"></i> <a href=""> EASTON OUTLET</li></a>
+                            <li><i class='bx bxs-circle inline-block mr-2' style="color: #7C2181;"></i> <a href="">ARAUCO PREMIUM <br>
+                                OUTLET</a>   </li>
+                            <li><i class='bx bxs-circle inline-block mr-2' style="color: #F08212;"></i><a href=""> MALL PLAZA NORTE</a> </li>
+                            <li><i class='bx bxs-circle inline-block mr-2' style="color: #FFE601;"></i><a href="">ENLACE RUTA 5</a> </li>
+                            <li class="flex gap-1"> <img src="img/Iv32d4.tif.png" alt="" class="h-5"><a>ESTACION DE METRO<br>
+                                “LOS LIBERTADORES”</a></li>
+                        </ul>
+                        <div class="relative text-white text-sm border-[1px] border-white px-3 pt-7 pb-2">                                                                                 
+                                <h1 class="absolute w-[97%] text-center -top-2 left-0 right-0 bg-six mx-auto text-xl">TIEMPOS DE TRASLADO</h1>                            
+                                <div class="flex justify-between">
+                                    <span>SANTIAGO CENTRO</span><span>20 MIN</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>PROVIDENCIA</span><span>15 MIN</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>VITACURA / LAS CONDES</span><span>15 MIN</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>LA DEHESA</span><span>25 MIN</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>AEROPUERTO</span><span>15 MIN</span>
+                                </div>                        
+                           
+                        </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+    <footer class="bg-second">
+        <div class="container lg:flex lg:justify-end lg:items-end py-10 gap-8 mx-auto">
+            <div class="font-light text-base text-eigth lg:text-right text-center">
+                <p>Las Esteras Norte 2601, Quilicura</p>
+                <div class="flex lg:gap-2 my-2 lg:my-0 lg:justify-end justify-center">
+                    <img src="img/wassap-icon.svg" alt="">
+                    <p>+56 9 9915 9535</p>
+                </div>
+            </div>
+            <div class="h-8">
+                <img src="img/logo.svg" alt="" class="h-full mx-auto">
+            </div>
+        </div>
+        
+    </footer>
+      <script src="main.js"></script>
+      <script src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js" charset="utf-8"></script>
+<script type="text/javascript">
+       const menuButton = document.querySelector('#mobile-menu');
+
+        menuButton.addEventListener('click', e  => {
+            const menu = document.querySelector('.mobile-links');
+
+            menu.classList.toggle('hidden');
+        });
+  var tooltipTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  );
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new Tooltip(tooltipTriggerEl);
+  });
+</script>
+</body>
+</html>
